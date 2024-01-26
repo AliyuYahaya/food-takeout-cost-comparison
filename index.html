@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Food Cost Comparison</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Food Cost Comparison</h1>
+        <p>Fill in the values below to see if it's cheaper to cook or order food</p>
+        <form onsubmit="return false">
+            <label for="work">Are you working at the moment</label>
+            <select name="work" id="work">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select> <br>
+
+            <div>
+                <label for="takeout-cost">Cost of buying Takeout</label>
+                <input name="takeout-cost" id="takeout-cost" type="number" required/><br>
+            </div>
+            
+            <div>
+                <label>Takeout Time [Minutes only]</label>
+                <input name="takeout-time" id="takeout-time" type="number" required/> <br>
+            </div>
+
+            <div>
+                <label>Cost of buying cooking ingredients</label>
+                <input name="cooking-cost" id="cooking-cost" type="number" required/> <br>
+            </div>  
+
+            <div>
+                <label>Cooking Time [Minutes only]</label>
+                <input name="cooking-time" id="cooking-time" type="number" required/> <br>
+            </div>  
+
+            <div>
+                <label>Your hourly wage</label>
+                <input name="wage" id="wage" type="number" required/> <br>
+            </div> 
+
+            <button type="button" onclick="cookvstakeout()"> Calculate </button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
