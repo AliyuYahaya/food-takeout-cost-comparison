@@ -7,7 +7,7 @@ function cookvstakeout() {
     const working = document.getElementById('work').value === 'yes';
     const res = document.getElementById('results');
 
-    // Assuming the wage is in minutes, converting it to cost per minute
+  
     wages = wages / 60;
 
     const cookTotal = wages * cookTime + cookCost;
